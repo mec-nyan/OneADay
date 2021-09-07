@@ -10,5 +10,15 @@ export default function Tile() {
     setState({ flipped: !state.flipped });
   }
 
-  return <div className={'token ' + (state.flipped ? 'green' : 'steelblue')} onClick={flip}></div>;
+  return (
+    <div className="flip-tile" onClick={flip}>
+      <div className={"inner-tile " + (state.flipped ? "flipped" : "")}>
+        <div className="tile-front">
+        </div> 
+        <div className="tile-back">
+          <img src="../public/img/cof_orange_hex.png" />
+        </div> 
+      </div> 
+    </div>  
+  );
 }
