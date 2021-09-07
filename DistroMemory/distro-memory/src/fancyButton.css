@@ -1,7 +1,9 @@
 .fancy {
   border: none;
-  border-radius: 0px;
+  border-radius: 5px;
   padding: 10px;
+  margin-right: 20px;
   background-color: tomato;
   color: white;
+  min-width: 100px;
 }
