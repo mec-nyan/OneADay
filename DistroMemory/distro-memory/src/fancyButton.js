@@ -1,9 +1,9 @@
 import './fancyButton.css';
 
-export default function FancyButton() {
+export default function FancyButton(props) {
   return (
     <button className="fancy">
-      Fancy button
+      {props.text}
     </button>
   );
 }
