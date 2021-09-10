@@ -25,6 +25,7 @@ return (
 
     <Tile front={ubuntu} back={gnu}/>
     <Tile front={nyan} back={gnu}/>
+    <Tile number={true} front='1' back={gnu}/>
 
   </div>
 );

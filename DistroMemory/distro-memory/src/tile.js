@@ -1,10 +1,8 @@
 import './tile.css';
-import ubuntu from './img/cof_orange_hex.png';
-import gnu from './img/heckert_gnu.transp.small.png';
 import { useState } from 'react';
 
 
-export default function Tile({ front, back }) {
+export default function Tile({ front, back, number }) {
   const [ state, setState ] = useState({ flipped: false,
   });
 
@@ -19,7 +17,7 @@ export default function Tile({ front, back }) {
           <img src={back} alt="" />
         </div> 
         <div className="tile-back">
-          <img src={front} alt=""/>
+          {number ? <p>{front}</p> : <img src={front} alt=""/>}
         </div> 
       </div> 
     </div>  

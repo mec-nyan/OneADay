@@ -53,3 +53,13 @@
   background-color: transparent;
   padding: 20px;
 }
+
+.tile-back p {
+  width: 70px;
+  height: 70px;
+  margin: 15px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 70px;
+}
+
