@@ -1,0 +1,9 @@
+.board {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: whitesmoke;
+  border: 1px solid tomato;
+}
