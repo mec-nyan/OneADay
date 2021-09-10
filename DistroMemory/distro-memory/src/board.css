@@ -1,9 +1,10 @@
 .board {
-  width: 400px;
-  height: 400px;
+  width: 800px;
+  height: 600px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template: repeat(6, 1fr) / repeat(8, 1fr);
   background-color: whitesmoke;
-  border: 1px solid tomato;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 20px;
 }

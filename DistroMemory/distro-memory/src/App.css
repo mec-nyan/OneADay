@@ -1,6 +1,9 @@
+body {
+  background-color: gainsboro;
+}
+
 .App {
   padding: 10px;
   margin: 0px;
-  background-color: gainsboro;
   color: darkslategrey;
 }
