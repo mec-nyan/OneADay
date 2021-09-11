@@ -1,0 +1,32 @@
+:root {
+  --pink: #d73d6c;
+  --salmon: #d57276;
+  --beige: #d6c2bc;
+  --grey: #c0cccc;
+  --blue: #65b2c6;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+}
+
+.startBtn {
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: var(--blue);
+  padding: 10px 40px;
+  font-size: 20px;
+  margin: auto;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  transition: transform 500ms;
+}
+
+.startBtn:hover {
+  transform: scale(1.5);
+}

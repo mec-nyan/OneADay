@@ -1,2 +1,15 @@
+:root {
+  --pink: #d73d6c;
+  --salmon: #d57276;
+  --beige: #d6c2bc;
+  --grey: #c0cccc;
+  --blue: #65b2c6;
+}
+
 body {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--grey);
+  height: 100%;
 }
