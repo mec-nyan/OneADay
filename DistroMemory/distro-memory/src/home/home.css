@@ -13,6 +13,7 @@
   width: 100vw;
   position: absolute;
   top: 0px;
+  background: transparent;
 }
 
 .startBtn {
@@ -20,7 +21,7 @@
   border-radius: 6px;
   color: white;
   background-color: var(--blue);
-  padding: 10px 40px;
+  padding: 20px;
   font-size: 20px;
   margin: auto;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
@@ -29,4 +30,25 @@
 
 .startBtn:hover {
   transform: scale(1.5);
+}
+
+.startBtn span {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.rotate {
+  animation: rotation;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

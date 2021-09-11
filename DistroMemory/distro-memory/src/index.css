@@ -3,13 +3,76 @@
   --salmon: #d57276;
   --beige: #d6c2bc;
   --grey: #c0cccc;
+  --darkgrey: #b0bbbb;
   --blue: #65b2c6;
 }
+
 
 body {
   font-family: sans-serif;
   margin: 0px;
-  padding: 0px;
-  background-color: var(--grey);
   height: 100%;
+  font-size: .8em;
+  
+  background-color: var(--grey);
+  background-image:
+    linear-gradient(
+      25deg,
+      transparent 65%,
+      var(--darkgrey),
+      transparent 70%
+    ),
+    linear-gradient(
+      -25deg,
+      transparent 65%,
+      var(--darkgrey),
+      transparent 70%
+    ),
+    linear-gradient(
+      -25deg,
+      transparent 30%,
+      var(--darkgrey),
+      transparent 35%
+    ),
+    linear-gradient(
+      25deg,
+      transparent 30%,
+      var(--darkgrey),
+      transparent 35%
+    ),  
+
+    linear-gradient(
+      65deg,
+      transparent 65%,
+      var(--darkgrey),
+      transparent 70%
+    ),
+    linear-gradient(
+      -65deg,
+      transparent 65%,
+      var(--darkgrey),
+      transparent 70%
+    ),
+    linear-gradient(
+      -65deg,
+      transparent 30%,
+      var(--darkgrey),
+      transparent 35%
+    ),
+    linear-gradient(
+      65deg,
+      transparent 30%,
+      var(--darkgrey),
+      transparent 35%
+    );
+  background-size: 
+    5em 2em,
+    5em 2em,
+    5em 2em,
+    5em 2em,
+    
+    2em 5em,
+    2em 5em,
+    2em 5em,
+    2em 5em;
 }
