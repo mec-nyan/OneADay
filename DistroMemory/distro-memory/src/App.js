@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import FancyButton from './fancyButton';
 import Tile from './tile';
 import Board from './board';
@@ -20,21 +21,26 @@ for (let i = 0; i < 24; ++i) {
 function App() {
 return (
   <div className="App">
-    <p>
-      Distro Memory
-    </p>
-    {/*
-    <FancyButton text="Fancy"/>
-    <FancyButton text="Button"/>
-    <FancyButton text="Yet"/>
-    <FancyButton text="Another one"/>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
 
-    <Tile front={ubuntu} back={gnu}/>
-    <Tile front={nyan} back={gnu}/>
-    */}
+        <Route exact path='/board'>
+          <Board />
+        </Route>
 
-    <Board back={gnu} number={true} t={t} />
+        <Route exact path='/score'>
+          <Score />
+        </Route>
 
+        <Route exact path='/quit'>
+          <Quit />
+        </Route>
+
+      </Switch>
+    </BrowserRouter>
   </div>
 );
 }
