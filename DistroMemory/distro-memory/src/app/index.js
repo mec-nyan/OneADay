@@ -11,8 +11,6 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav />
-
         <Switch>
           <Route exact path='/'>
             <Home />
