@@ -1,3 +1,4 @@
+import Tile from './tile';
 
 
 export default function Board() {
@@ -6,5 +7,5 @@ export default function Board() {
     <div className='board'>
 
     </div> 
-  )
+  );
 }

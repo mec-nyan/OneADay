@@ -7,7 +7,7 @@ import Board from './board';
 import './play.css';
 
 
-export default function Play({ front, back, number, t }) {
+export default function Play() {
   const arrowLeft = <NavLink className='link' activeClassName='active' to='/'><FontAwesomeIcon icon={faArrowLeft}/></NavLink>;
   const [ state, setState ] = useState({ level: 1, score: 0 });
 
