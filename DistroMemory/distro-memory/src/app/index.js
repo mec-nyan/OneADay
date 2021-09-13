@@ -1,5 +1,4 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Nav from '../nav';
 import Home from '../home';
 import Board from '../board';
 import Score from '../score';
