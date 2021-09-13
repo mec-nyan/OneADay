@@ -13,10 +13,10 @@ export default function Tile({ front, back, number }) {
   return (
     <div className="flip-tile" onClick={flip}>
       <div className={"inner-tile " + (state.flipped ? "flipped" : "")}>
-        <div className="tile-front">
+        <div className="tile-back">
           <img src={back} alt="" />
         </div> 
-        <div className="tile-back">
+        <div className="tile-front">
           {number ? <p>{front}</p> : <img src={front} alt=""/>}
         </div> 
       </div> 
