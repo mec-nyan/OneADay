@@ -1,13 +1,9 @@
 import './nav.css';
 
-export default function Nav(props) {
-  const elements = [];
-  for (let p in props) {
-    elements.push(props[p]);
-  }
+export default function Nav({ left, center, right }) {
   return (
     <nav className='nav'>
-      {elements}
+      {[left, center, right]}
     </nav> 
   );
 }
