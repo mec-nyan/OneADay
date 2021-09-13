@@ -1,9 +1,9 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from '../home';
-import Board from '../board';
-import Score from '../score';
-import Quit from '../quit';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Home from '../home'
+import Play from '../play'
+import Score from '../score'
+import Quit from '../quit'
+import './App.css'
 
 
 export default function App() {
@@ -15,8 +15,8 @@ export default function App() {
             <Home />
           </Route>
 
-          <Route exact path='/board'>
-            <Board />
+          <Route exact path='/play'>
+            <Play />
           </Route>
 
           <Route exact path='/score'>
@@ -30,5 +30,5 @@ export default function App() {
         </Switch>
       </BrowserRouter>
     </div>
-  );
+  )
 }
