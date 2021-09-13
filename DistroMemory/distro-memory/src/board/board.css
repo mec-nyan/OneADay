@@ -4,10 +4,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  display: grid;
-  grid-template: repeat(6, 1fr) / repeat(8, 1fr);
-  justify-items: center;
-  align-items: center;
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
+
+.active, .link {
+  color: white;
+}
+
